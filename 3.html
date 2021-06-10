@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="sidebar.css">
+<style type="text/css">
+	.para1{
+		 text-align: center;  
+    color: blue;
+	}
+	#para2{
+		 text-align: center;  
+    color: blue;
+	}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div id="my_logo"></div>
+  <a href="1.html">Introduction to CSS</a>
+  <a href="2.html">CSS Syntax</a>
+  <a class="active" href="3.html">CSS Selector</a>
+  <a href="4.html">How to add CSS</a>
+  <a href="5.html">Inline CSS</a>
+  <a href="6.html">Internal CSS</a>
+  <a href="7.html">External CSS</a>
+    <a href="8.html">CSS Background</a>
+  <a href="9.html">CSS Border</a>
+  <a href="10.html">CSS border-spacing</a>
+  <a href="11.html">CSS Display</a>
+  <a href="13.html">CSS font</a>
+  <a href="14.html">CSS font-size</a>
+  <a href="15.html">CSS font-family</a>
+  <a href="16.html">CSS font-weight</a>
+  <a href="17.html">CSS Colors</a>
+  <a href="18.html">CSS Hover</a>
+  <a href="19.html">CSS Background-color</a>
+  <a href="20.html">CSS Line Height</a>
+  <a href="21.html">CSS Margin</a>
+  <a href="22.html">CSS Images</a>
+  <a href="23.html">CSS Padding</a>
+  <a href="24.html">CSS Text-shadow</a>
+  <a href="25.html">Text-transform</a>
+  <a href="quiz.html">QUIZ</a>
+</div>
+
+<div class="content">
+  <h2>CSS Selector</h2>
+  <p><b>CSS selectors</b> are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.</p>
+  <p>There are several different types of selectors in CSS.</p>
+  <ol>
+  	<li>CSS Element Selector</li>
+  	<li>CSS Id Selector</li>
+  	<li>CSS Class Selector</li>
+  	<li>CSS Universal Selector</li>
+  </ol>
+
+
+  <h3>1) CSS Element Selector</h3>
+  <p>The element selector selects the HTML element by name.</p>
+
+  <textarea rows="17" cols="100">
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+p{  
+    text-align: center;  
+    color: blue;  
+}   
+</style>  
+</head>  
+<body>  
+<p>This style will be applied on every paragraph.</p>  
+<p id="para1">Me too!</p>  
+<p>And me!</p>  
+</body>  
+</html>
+  </textarea>
+
+  <p>Output:</p>
+<p class="para1">This style will be applied on every paragraph.</p>  
+<p class="para1">Me too!</p>  
+<p class="para1">And me!</p>
+<hr>
+<h3>2) CSS Id Selector</h3>
+<p>The id selector selects the id attribute of an HTML element to select a specific element. An id is always unique within the page so it is chosen to select a single, unique element.</p>
+<p>It is written with the hash character (#), followed by the id of the element.</p>
+
+<textarea rows="16" cols="100">
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+#para1 {  
+    text-align: center;  
+    color: blue;  
+}  
+</style>  
+</head>  
+<body>  
+<p id="para1">Hello World!</p>  
+<p>This paragraph will not be affected.</p>  
+</body>  
+</html> 
+</textarea>
+
+<p>Output:</p>
+<p id="para2">This paragraph with id para 1 is affected.</p>  
+<p>This paragraph will not be affected.</p>
+<hr>
+
+<h3>3) CSS Class Selector</h3>
+<p>The class selector selects HTML elements with a specific class attribute. It is used with a period character . (full stop symbol) followed by the class name.</p>
+<p>Let's take an example with a class "center".</p>
+
+<textarea rows="16" cols="100">
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+.center {  
+    text-align: center;  
+    color: blue;  
+}  
+</style>  
+</head>  
+<body>  
+<h1 class="center">This heading is blue and center-aligned.</h1>  
+<p class="center">This paragraph is blue and center-aligned.</p>   
+</body>  
+</html> 
+</textarea>
+
+<p>Output:</p>
+<h1 class="para1">This heading is blue and center-aligned.</h1>  
+<p class="para1">This paragraph is blue and center-aligned.</p> 
+<hr>
+
+<h3>4) CSS Universal Selector</h3>
+<p>The universal selector is used as a wildcard character. It selects all the elements on the pages.</p>
+<textarea rows="16" cols="100">
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+* {  
+   color: green;  
+   font-size: 20px;  
+}   
+</style>  
+</head>  
+<body>  
+<h2>This is heading</h2>  
+<p id="para1">This style will be applied on every paragraph.</p>    
+</body>  
+</html> 
+</textarea>
+<p>Output:</p>
+<h2 style="color: green;font-size: 20px;">This is heading</h2>
+<p style="color: green;font-size: 20px;">This style will be applied on every paragraph.</p>
+<br>
+
+</div>
+
+</body>
+</html>

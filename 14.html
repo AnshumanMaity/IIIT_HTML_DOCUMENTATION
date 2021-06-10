@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="sidebar.css">
+<style type="text/css">
+  #first {
+  font-size: 40px;
+}
+#second {
+  font-size: 20px;
+}
+#fir {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+#sec {
+  font-size: 1.875em; /* 30px/16=1.875em */
+ }
+
+#thi {
+  font-size: 0.875em; /* 14px/16=0.875em */
+}
+</style>
+</head>
+<body>
+    <!-- sidebar starts --> 
+<div class="sidebar">
+  <div id="my_logo"></div>
+  <a href="1.html">Introduction to CSS</a>
+  <a href="2.html">CSS Syntax</a>
+  <a href="3.html">CSS Selector</a>
+  <a href="4.html">How to add CSS</a>
+  <a href="5.html">Inline CSS</a>
+  <a href="6.html">Internal CSS</a>
+  <a href="7.html">External CSS</a>
+  <a href="8.html">CSS Background</a>
+  <a href="9.html">CSS Border</a>
+  <a href="10.html">CSS border-spacing</a>
+  <a href="11.html">CSS Display</a>
+  <a href="12.html">CSS Float</a>
+  <a href="13.html">CSS font</a>
+  <a class="active" href="14.html">CSS font-size</a>
+  <a href="15.html">CSS font-family</a>
+  <a href="16.html">CSS font-weight</a>
+  <a href="17.html">CSS Colors</a>
+  <a href="18.html">CSS Hover</a>
+  <a href="19.html">CSS Background-color</a>
+  <a href="20.html">CSS Line Height</a>
+  <a href="21.html">CSS Margin</a>
+  <a href="22.html">CSS Images</a>
+  <a href="23.html">CSS Padding</a>
+  <a href="24.html">CSS Text-shadow</a>
+  <a href="25.html">Text-transform</a>
+  <a href="quiz.html">QUIZ</a>
+</div>
+<!-- sidebar ends --> 
+
+<div class="content"> <!-- keep everything inside this div --> 
+
+<h2>CSS Font-size</h2>
+<p>The font-size property in CSS is used to specify the height and size of the font. It affects the size of the text of an element. Its default value is medium and can be applied to every element. The values of this property include <strong>xx-small</strong>, <strong>small</strong>, <strong>x-small</strong>, etc.</p>
+
+<h4>Syntax:</h4>
+<textarea rows="2" cols="100">
+font-size: medium|large|x-large|xx-large|xx-small|x-small|small|;
+</textarea>
+
+<p>The font-size can be relative or absolute.</p>
+<hr>
+
+<h2>Absolute-size</h2>
+<p>It is used to set the text to a definite size. Using absolute-size, it is not possible to change the size of the text in all browsers. It is advantageous when we know the physical size of the output.</p>
+<hr>
+
+<h2>Relative-size</h2>
+<p>It is used to set the size of the text relative to its neighboring elements. With relative-size, it is possible to change the size of the text in browsers.</p>
+<hr>
+
+<h2>Font-size with pixels</h2>
+<p>When we set the size of text with pixels, then it provides us the full control over the size of the text.</p>
+
+<h4>Example:</h4>
+
+<textarea rows="21" cols="100">
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+  
+#first {  
+  font-size: 40px;  
+}  
+#second {  
+  font-size: 20px;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<p id="first">This is a paragraph having size 40px.</p>  
+<p id="second">This is another paragraph having size 20px.</p>  
+  
+</body>  
+</html>  
+</textarea>
+
+<p><b>Output:</b></p>
+<p id="first">This is a paragraph having size 40px.</p>
+<p id="second">This is another paragraph having size 20px.</p>
+<hr>
+
+<h2>Font-size with em</h2>
+<p>It is used to resize the text. Most of the developers prefer <strong>em</strong> instead of <strong>pixels</strong>. It is recommended by the world wide web consortium (W3C). As stated above, the default text size in browsers is 16px. So, we can say that the default size of <strong>1em</strong> is <strong>16px</strong>.</p>
+
+<p>The formula for calculating the size from <strong>pixels</strong> to <strong>em</strong> is <strong>em = pixels/16</strong>.</p>
+
+<h4>Example:</h4>
+
+<textarea rows="25" cols="100"><!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+#first {  
+  font-size: 2.5em; /* 40px/16=2.5em */  
+}  
+  
+#second {  
+  font-size: 1.875em; /* 30px/116=1.875em */  
+ }  
+  
+#third {  
+  font-size: 0.875em; /* 14px/16=0.875em */  
+}  
+</style>  
+</head>  
+<body>  
+  
+<p id='first'>First paragraph.</p>  
+<p id='second'>Second paragraph</p>  
+<p id='third'>Third Paragraph.</p>  
+</body>  
+</html>  </textarea>
+
+<p><b>Output:</b></p>
+
+<p id='fir'>First paragraph.</p>
+<p id='sec'>Second paragraph</p>
+<p id='thi'>Third Paragraph.</p>
+
+<br>
+
+
+</body>

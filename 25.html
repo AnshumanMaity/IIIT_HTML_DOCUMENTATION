@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="sidebar.css">
+<style>  
+table, th, td {  
+    border: 1px solid black;  
+    border-collapse: collapse;  
+}  
+th, td {  
+    padding: 10px;  
+}
+p.padding {  
+    padding-top: 50px;  
+    padding-right: 100px;  
+    padding-bottom: 150px;  
+    padding-left: 200px;  
+}
+</style>  
+</head>
+<body>
+
+<div class="sidebar">
+  <div id="my_logo"></div>
+  <a href="1.html">Introduction to CSS</a>
+  <a href="2.html">CSS Syntax</a>
+  <a href="3.html">CSS Selector</a>
+  <a href="4.html">How to add CSS</a>
+  <a href="5.html">Inline CSS</a>
+  <a href="6.html">Internal CSS</a>
+  <a href="7.html">External CSS</a>
+  <a href="8.html">CSS Background</a>
+  <a href="9.html">CSS Border</a>
+  <a href="10.html">CSS border-spacing</a>
+  <a href="11.html">CSS Display</a>
+  <a href="13.html">CSS font</a>
+  <a href="14.html">CSS font-size</a>
+  <a href="15.html">CSS font-family</a>
+  <a href="16.html">CSS font-weight</a>
+  <a href="17.html">CSS Colors</a>
+  <a href="18.html">CSS Hover</a>
+  <a href="19.html">CSS Background-color</a>
+  <a href="20.html">CSS Line Height</a>
+  <a href="21.html">CSS Margin</a>
+  <a href="22.html">CSS Images</a>
+  <a href="23.html">CSS Padding</a>
+  <a href="24.html">CSS Text-shadow</a>
+  <a class="active" href="25.html">Text-transform</a>
+  <a href="quiz.html">QUIZ</a>
+</div>
+<div class="content">
+  <h1 class="h1">CSS text-transform</h1>
+<p>This CSS property allows us to change the case of the text. It is used to control the text capitalization. This CSS property can be used to make the appearance of text in all-lowercase or all-uppercase or can convert the first character of each word to uppercase.</p>
+<p><strong>Syntax</strong></p>
+<p><strong>text-transform: capitalize| uppercase | lowercase | none | initial | inherit;</strong></p>
+<p>Let's discuss its property values along with an example.</p>
+<h2 class="h2">capitalize</h2>
+<p>It transforms the first character of each word to uppercase. It will not capitalize the first letter after the number. It only affects the first letters of the words instead of changing the rest of the letters in the word.</p>
+<p>If we <strong>apply the capitalize </strong>property on a word that already has capital letters, then the letters of that word will not switch to lowercase.</p>
+<p>The illustration of this property is given below.</p>
+<p><strong>Syntax</strong></p>
+<textarea rows="32" cols="100">
+  <!DOCTYPE html>   
+<html>   
+    
+<head>   
+    <title>   
+        CSS text-transform Property   
+    </title>   
+    <style>   
+    body{  
+    text-align:center;  
+    }  
+        h1 {   
+            color: blue;   
+        }   
+            
+        p{   
+            text-transform: capitalize;   
+        }   
+    </style>   
+</head>   
+    
+<body>   
+        <h1>CSS text-transform property</h1>   
+    
+        <h2>text-transform: capitalize</h2>   
+        <p>hello world</p>   
+        <p>WELCOME to the javaTpoint</p>  
+          
+</body>   
+    
+</html>  
+</textarea>
+<p><strong>Output:</strong></p>   
+        <h1 style="color: blue;">CSS text-transform property</h1>   
+    
+        <h2>text-transform: capitalize</h2>   
+        <p style="text-transform: capitalize;">hello world</p>   
+        <p style="text-transform: capitalize;">WELCOME to the Css Tutorials</p> 
+<h2 class="h2">uppercase</h2>
+<p>As its name implies, it transforms all characters of the word into uppercase.</p>
+<p><strong>Syntax</strong></p>
+<p><strong>text-transform: uppercase;</strong></p>
+<p><strong>Example</strong></p>
+<textarea rows="30" cols="100">
+  <!DOCTYPE html>   
+<html>   
+    
+<head>   
+    <title>   
+        CSS text-transform Property   
+    </title>   
+    <style>   
+        h1 {   
+            color: blue;   
+        }   
+            
+        p{   
+            text-transform: uppercase;   
+        }   
+    </style>   
+</head>   
+    
+<body>      
+        <h1>CSS text-transform property</h1>   
+    
+        <h2>text-transform: uppercase</h2>   
+        <p>hello world</p>   
+        <p>WELCOME to the CSS tutorials</p>   
+          
+</body>   
+    
+</html>
+</textarea>
+<p><strong>Output:</strong></p>
+<h1 style="color: blue;">CSS text-transform property</h1>   
+    
+        <h2>text-transform: uppercase</h2>   
+        <p style="text-transform: uppercase;">hello world</p>   
+        <p style="text-transform: uppercase;">WELCOME to the CSS tutorials</p>
+
+<h2 class="h2">lowercase</h2>
+<p>It transforms all characters of the word into lowercase.</p>
+<p><strong>Syntax</strong></p>
+<p><strong>text-transform: lowercase;</strong></p>
+<p><strong>Example</strong></p>
+
+<textarea rows="30" cols="100">
+  <!DOCTYPE html>   
+<html>   
+    
+<head>   
+    <title>   
+        CSS text-transform Property   
+    </title>   
+    <style>   
+        h1 {   
+            color: blue;   
+        }   
+            
+        p{   
+            text-transform: lowercase;   
+        }   
+    </style>   
+</head>   
+    
+<body>      
+        <h1>CSS text-transform property</h1>   
+    
+        <h2>text-transform: lowercase</h2>   
+        <p>hello world</p>   
+        <p>WELCOME to the CSS tutorials</p>   
+          
+</body>   
+    
+</html>
+</textarea>
+<p><strong>Output:</strong></p>
+<h1 style="color: blue;">CSS text-transform property</h1>   
+    
+        <h2>text-transform: uppercase</h2>   
+        <p style="text-transform: lowercase;">hello world</p>   
+        <p style="text-transform: lowercase;">WELCOME to the CSS tutorials</p>
+
+<h2 class="h2">none</h2>
+<p>It is the default value that has no capitalization. It renders the text as it is.</p>
+<p><strong>Syntax</strong></p>
+<p><strong>text-transform: none;</strong></p>
+<p><strong>Example</strong></p>
+<textarea rows="30" cols="100">
+   <!DOCTYPE html>   
+<html>   
+    
+<head>   
+    <title>   
+        CSS text-transform Property   
+    </title>   
+    <style>   
+        h1 {   
+            color: blue;   
+        }   
+            
+        p{   
+            text-transform: none;   
+        }   
+    </style>   
+</head>   
+    
+<body>      
+        <h1>CSS text-transform property</h1>   
+    
+        <h2>text-transform: none</h2>   
+        <p>hello world</p>   
+        <p>WELCOME to the CSS tutorials</p>   
+          
+</body>   
+    
+</html>
+</textarea>
+<p><strong>Output:</strong></p>
+<h1 style="color: blue;">CSS text-transform property</h1>   
+    
+        <h2>text-transform: uppercase</h2>   
+        <p style="text-transform: none;">hello world</p>   
+        <p style="text-transform: none;">WELCOME to the CSS tutorials</p>
+
+
+
+</div>
+</body>
+</html>

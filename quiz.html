@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
+    <style type="text/css">
+    #heading {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .q {
+        width: auto;
+        height: auto;
+        border: 1px solid grey;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .fancy_list li {
+        line-height: 1.7em;
+        height: auto;
+    }
+
+    .collapse {
+        background-color: #eee;
+        margin-top: 10px;
+    }
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div id="my_logo"></div>
+        <a href="1.html">Introduction to CSS</a>
+        <a href="2.html">CSS Syntax</a>
+        <a href="3.html">CSS Selector</a>
+        <a href="4.html">How to add CSS</a>
+        <a href="5.html">Inline CSS</a>
+        <a href="6.html">Internal CSS</a>
+        <a href="7.html">External CSS</a>
+        <a href="8.html">CSS Background</a>
+        <a href="9.html">CSS Border</a>
+        <a href="10.html">CSS border-spacing</a>
+        <a href="11.html">CSS Display</a>
+        <a href="12.html">CSS Float</a>
+        <a href="13.html">CSS font</a>
+        <a href="14.html">CSS font-size</a>
+        <a href="15.html">CSS font-family</a>
+        <a href="16.html">CSS font-weight</a>
+        <a href="17.html">CSS Colors</a>
+        <a href="18.html">CSS Hover</a>
+        <a href="19.html">CSS Background-color</a>
+        <a href="20.html">CSS Line Height</a>
+        <a href="21.html">CSS Margin</a>
+        <a href="22.html">CSS Images</a>
+        <a href="23.html">CSS Padding</a>
+        <a href="24.html">CSS Text-shadow</a>
+        <a href="25.html">Text-transform</a>
+        <a class="active" href="quiz.html">CSS Quiz</a>
+    </div>
+    <div class="content">
+        <h1 id="heading">CSS Quiz</h1>
+        <div class="q">
+            <p>Q 1 - Which of the following selector matches a element based on its id?</p>
+            <ol type="A" class="fancy_list">
+                <li>The Id Selector</li>
+                <li>The Descendant Selector</li>
+                <li>The Class Selector</li>
+                <li>The Universal Selector</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo">Answer</button>
+            <br>
+            <div id="demo" class="collapse">
+                <p>Answer : A</p>
+                <p>Explanation</p>
+                <p>The Id Selector matches a element based on its id attribute.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 2 - Which of the following is a true about CSS style overriding?</p>
+            <ol type="A" class="fancy_list">
+                <li>Any inline style sheet takes highest priority. So, it will override any rule defined in tags or rules defined in any external style sheet file.</li>
+                <li>Any rule defined in tags will override rules defined in any external style sheet file.</li>
+                <li>Any rule defined in external style sheet file takes lowest priority, and rules defined in this file will be applied only when above two rules are not applicable.</li>
+                <li>All of the above.</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo1">Answer</button>
+            <br>
+            <div id="demo1" class="collapse">
+                <p>Answer : D</p>
+                <p>Explanation</p>
+                <p>All of the above.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 3 - Which of the following property specifies the color of a border?</p>
+            <ol type="A" class="fancy_list">
+                <li>border-color</li>
+                <li>border-style</li>
+                <li>border-width</li>
+                <li>border-bottom-color</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo2">Answer</button>
+            <br>
+            <div id="demo2" class="collapse">
+                <p>Answer : A</p>
+                <p>Explanation</p>
+                <p>The border-color specifies the color of a border.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 4 - What does CSS stand for?</p>
+            <ol type="A" class="fancy_list">
+                <li>Colorful Style Sheets</li>
+                <li>Creative Style Sheets</li>
+                <li>Computer Style Sheets</li>
+                <li>Cascading Style Sheets</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo3">Answer</button>
+            <br>
+            <div id="demo3" class="collapse">
+                <p>Answer : d</p>
+                <p>Explanation</p>
+                <p>CSS stands for Cascading Style Sheets.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 5 - Which of the following measurement defines a measurement in centimeters?</p>
+            <ol type="A" class="fancy_list">
+                <li>c</li>
+                <li>cm</li>
+                <li>centi</li>
+                <li>centimeter</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo4">Answer</button>
+            <br>
+            <div id="demo4" class="collapse">
+                <p>Answer : B</p>
+                <p>Explanation</p>
+                <p>Example: div {margin-bottom: 1cm;}</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 6 - Which of the following measurement defines a measurement relative to the height of a font in em spaces?</p>
+            <ol type="A" class="fancy_list">
+                <li>px</li>
+                <li>in</li>
+                <li>em</li>
+                <li>pt</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo5">Answer</button>
+            <br>
+            <div id="demo5" class="collapse">
+                <p>Answer : C</p>
+                <p>Explanation</p>
+                <p>Defines a measurement relative to the height of a font in em spaces. Because an em unit is equivalent to the size of a given font, if you assign a font to 12pt, each em unit would be 12pt, thus 2em would be 24pt.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 7 - Which of the following measurement defines a measurement in points?</p>
+            <ol type="A" class="fancy_list">
+                <li>px</li>
+                <li>in</li>
+                <li>em</li>
+                <li>pt</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo6">Answer</button>
+            <br>
+            <div id="demo6" class="collapse">
+                <p>Answer : D</p>
+                <p>Explanation</p>
+                <p>Defines a measurement in points. A point is defined as 1/72nd of an inch. A point does not equate to a pixel unless there are 72 pixels per inch onscreen.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 8 - Which of the following property is used to create a small-caps effect?</p>
+            <ol type="A" class="fancy_list">
+                <li>font-family</li>
+                <li>font-style</li>
+                <li>font-variant</li>
+                <li>font-weight</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo7">Answer</button>
+            <br>
+            <div id="demo7" class="collapse">
+                <p>Answer : C</p>
+                <p>Explanation</p>
+                <p>The font-variant property is used to create a small-caps effect.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 9 - Which of the following property is used as shorthand to specify a number of other font properties?</p>
+            <ol type="A" class="fancy_list">
+                <li>font-size</li>
+                <li>font</li>
+                <li>font-variant</li>
+                <li>font-weight</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo8">Answer</button>
+            <br>
+            <div id="demo8" class="collapse">
+                <p>Answer : B</p>
+                <p>Explanation</p>
+                <p>The font property is used as shorthand to specify a number of other font properties.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 10 - Which of the following property of a anchor element signifies unvisited hyperlinks?</p>
+            <ol type="A" class="fancy_list">
+                <li>link</li>
+                <li>visited</li>
+                <li>hover</li>
+                <li>active</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo9">Answer</button>
+            <br>
+            <div id="demo9" class="collapse">
+                <p>Answer : A</p>
+                <p>Explanation</p>
+                <p>The :link signifies unvisited hyperlinks.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 11 - Which of the following property specifies the color of a border?</p>
+            <ol type="A" class="fancy_list">
+                <li>border-color</li>
+                <li>border-style</li>
+                <li>border-width</li>
+                <li>border-bottom-color</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo10">Answer</button>
+            <br>
+            <div id="demo10" class="collapse">
+                <p>Answer : A</p>
+                <p>Explanation</p>
+                <p>The border-color specifies the color of a border.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 12 - Which of the following property changes the style of left border?</p>
+            <ol type="A" class="fancy_list">
+                <li>border-bottom-style</li>
+                <li>border-top-style</li>
+                <li>border-left-style</li>
+                <li>border-right-style</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo11">Answer</button>
+            <br>
+            <div id="demo11" class="collapse">
+                <p>Answer : C</p>
+                <p>Explanation</p>
+                <p>The border-left-style changes the style of left border.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 13 - Which of the following value of cursor shows it as crosshair or plus sign?</p>
+            <ol type="A" class="fancy_list">
+                <li>crosshair</li>
+                <li>default</li>
+                <li>pointer</li>
+                <li>move</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo12">Answer</button>
+            <br>
+            <div id="demo12" class="collapse">
+                <p>Answer : A</p>
+                <p>Explanation</p>
+                <p>crosshair: A crosshair or plus sign.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 14 - Which of the following property specifies the bottom margin of an element?</p>
+            <ol type="A" class="fancy_list">
+                <li>margin</li>
+                <li>margin-bottom</li>
+                <li>margin-top</li>
+                <li>margin-left</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo13">Answer</button>
+            <br>
+            <div id="demo13" class="collapse">
+                <p>Answer : B</p>
+                <p>Explanation</p>
+                <p>The margin-bottom specifies the bottom margin of an element.</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 15 - Which of the following measurement is relative to font-size of the root element?</p>
+            <ol type="A" class="fancy_list">
+                <li>rem</li>
+                <li>kd</li>
+                <li>rr</li>
+                <li>hx</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo14">Answer</button>
+            <br>
+            <div id="demo14" class="collapse">
+                <p>Answer : A</p>
+                <p>Explanation</p>
+                <p>rem-Relative to font-size of the root element</p>
+            </div>
+        </div>
+        <div class="q">
+            <p>Q 16 - Which of the following measurement defines a measurement relative to a font’s x-height?</p>
+            <ol type="A" class="fancy_list">
+                <li>e</li>
+                <li>xh</li>
+                <li>ex</li>
+                <li>rxh</li>
+            </ol>
+            <button data-toggle="collapse" data-target="#demo15">Answer</button>
+            <br>
+            <div id="demo15" class="collapse">
+                <p>Answer : C</p>
+                <p>Explanation</p>
+                <p>Defines a measurement relative to a font’s x-height. The x-height is determined by the height of the font’s lowercase letter x.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

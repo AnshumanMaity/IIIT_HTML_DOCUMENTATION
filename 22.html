@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="sidebar.css">
+<style>  
+table, th, td {  
+    border: 1px solid black;  
+    border-collapse: collapse;  
+}  
+th, td {  
+    padding: 10px;  
+}
+#img1{  
+margin-left:auto;  
+margin-right:auto;  
+display:block;  
+}  
+</style>  
+</head>
+<body>
+
+<div class="sidebar">
+  <div id="my_logo"></div>
+  <a href="1.html">Introduction to CSS</a>
+  <a href="2.html">CSS Syntax</a>
+  <a href="3.html">CSS Selector</a>
+  <a href="4.html">How to add CSS</a>
+  <a href="5.html">Inline CSS</a>
+  <a href="6.html">Internal CSS</a>
+  <a href="7.html">External CSS</a>
+  <a href="8.html">CSS Background</a>
+  <a href="9.html">CSS Border</a>
+  <a href="10.html">CSS border-spacing</a>
+  <a href="11.html">CSS Display</a>
+  <a href="13.html">CSS font</a>
+  <a href="14.html">CSS font-size</a>
+  <a href="15.html">CSS font-family</a>
+  <a href="16.html">CSS font-weight</a>
+  <a href="17.html">CSS Colors</a>
+  <a href="18.html">CSS Hover</a>
+  <a href="19.html">CSS Background-color</a>
+  <a href="20.html">CSS Line Height</a>
+  <a href="21.html">CSS Margin</a>
+  <a class="active" href="22.html">CSS Images</a>
+  <a href="23.html">CSS Padding</a>
+  <a href="24.html">CSS Text-shadow</a>
+  <a href="25.html">Text-transform</a>
+  <a href="quiz.html">QUIZ</a>
+</div>
+<div class="content">
+	<h1>CSS Line Images</h1>
+  <p>Images are an important part of any web application. Including a lot of images in a web application is generally not recommended, but it is important to use the images wherever they required. CSS helps us to control the display of images in web applications.</p>
+<p>The styling of an image in CSS is similar to the styling of an element by using the borders and margins. There are multiple CSS properties such as <strong>border </strong>property, <strong>height </strong>property, <strong>width </strong>property, etc. that helps us to style an image.</p>
+<p>Let's discuss the styling of images in CSS by using some illustrations.</p>
+<h2 class="h2">Thumbnail Image</h2>
+<p>The border property is used to make a thumbnail image.</p>
+<p><strong>Example</strong></p>
+<textarea rows="20" cols="100">
+   <!DOCTYPE html>   
+<html>   
+<head>   
+    <style>   
+img{  
+border: 2px solid red;  
+border-radius:5px;  
+padding:10px;  
+}   
+
+    </style>   
+</head>   
+    
+<body>  
+ <h1>Thumbnail Image</h1>  
+<img src="jtp.png"></img>    
+</body>   
+</html>  
+</textarea>
+<p><strong>Output:</strong></p>
+<img src="img.jpg" style="border: 2px solid red;border-radius:5px;padding:10px;"></img>
+
+<h2 class="h2">Transparent image</h2>
+<p>To make an image transparent, we have to use the <strong>opacity </strong>property. The value of this property lies between 0.0 to 1.0, respectively.</p>
+<p><strong>Example</strong></p>
+<textarea rows="20" cols="100">
+   <!DOCTYPE html>   
+<html>   
+<head>   
+    <style>   
+img{  
+border: 2px solid red;  
+border-radius:5px;  
+padding:10px;  
+opacity:0.3;  
+}
+    </style>   
+</head>   
+    
+<body>  
+ <h1>Transparent Image</h1>  
+<img src="jtp.png"></img>  
+<h2>Welcome to javaTpoint</h2>  
+</body>  
+</html>  
+</textarea>
+
+<p><strong>Output:</strong></p>
+
+<img src="img.jpg" style="border: 2px solid red;  
+border-radius:5px;  
+padding:10px;  
+opacity:0.3;"></img>
+
+<h2 class="h2">Center an Image</h2>
+<p>We can center an image by using the <strong>left-margin</strong> and <strong>right-margin</strong> property. We have to set these properties to <strong>auto </strong>in order to make a block element.</p>
+<p><strong>Example</strong></p>
+<textarea rows="22" cols="100">
+  <!DOCTYPE html>   
+<html>   
+<head>   
+    <style>   
+#img1{  
+margin-left:auto;  
+margin-right:auto;  
+display:block;  
+}  
+h1,h2{  
+text-align:center;  
+}  
+    </style>   
+</head>   
+    
+<body>  
+ <h1>Center image</h1>  
+<img src="jtp.png" id="img1"></img>  
+<h2>Welcome to javaTpoint</h2>  
+</body>   
+</html>  
+</textarea>
+<p><strong>Output:</strong></p>
+
+<img src="img.jpg" id="img1"></img> 
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="sidebar.css">
+<style type="text/css">
+	.fancy_list li {
+     line-height: 1.5em;
+     height: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div id="my_logo"></div>
+  <a href="1.html">Introduction to CSS</a>
+  <a href="2.html">CSS Syntax</a>
+  <a href="3.html">CSS Selector</a>
+  <a href="4.html">How to add CSS</a>
+  <a class="active" href="5.html">Inline CSS</a>
+  <a href="6.html">Internal CSS</a>
+  <a href="7.html">External CSS</a>
+  <a href="8.html">CSS Background</a>
+  <a href="9.html">CSS Border</a>
+  <a href="10.html">CSS border-spacing</a>
+  <a href="11.html">CSS Display</a>
+  <a href="13.html">CSS font</a>
+  <a href="14.html">CSS font-size</a>
+  <a href="15.html">CSS font-family</a>
+  <a href="16.html">CSS font-weight</a>
+  <a href="17.html">CSS Colors</a>
+  <a href="18.html">CSS Hover</a>
+  <a href="19.html">CSS Background-color</a>
+  <a href="20.html">CSS Line Height</a>
+  <a href="21.html">CSS Margin</a>
+  <a href="22.html">CSS Images</a>
+  <a href="23.html">CSS Padding</a>
+  <a href="24.html">CSS Text-shadow</a>
+  <a href="25.html">Text-transform</a>
+  <a href="quiz.html">QUIZ</a>
+</div>
+
+<div class="content">
+  <h2>Inline CSS</h2>
+  <p>We can apply CSS in a single element by inline CSS technique.</p>
+  <p>The inline CSS is also a method to insert style sheets in HTML document. This method mitigates some advantages of style sheets so it is advised to use this method sparingly.</p>
+  <p>If you want to use inline CSS, you should use the style attribute to the relevant tag.</p>
+  <p>Syntax:</p>
+
+  <textarea rows="2" cols="100"><htmltag style="cssproperty1:value; cssproperty2:value;"> </htmltag></textarea>
+
+  <p>Example:</p>
+
+  <textarea rows="3" cols="100">
+<h2 style="color:red;margin-left:40px;">Inline CSS is applied on this heading.</h2>  
+<p>This paragraph is not affected.</p>  
+</textarea>
+
+<p>Output:</p>
+<h2 style="color:red;margin-left:40px;">Inline CSS is applied on this heading.</h2>  
+<p>This paragraph is not affected.</p>  
+<hr>
+<h2>Disadvantages of Inline CSS</h2>
+<ul class="fancy_list">
+	<li>You cannot use quotations within inline CSS. If you use quotations the browser will interpret this as an end of your style value.</li>
+	<li>These styles cannot be reused anywhere else.</li>
+	<li>These styles are tough to be edited because they are not stored at a single place.</li>
+	<li>It is not possible to style pseudo-codes and pseudo-classes with inline CSS.</li>
+	<li>Inline CSS does not provide browser cache advantages.</li>
+</ul>
+  
+
+</div>
+
+</body>
+</html>

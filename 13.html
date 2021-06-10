@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="sidebar.css">
+	<title></title>
+</head>
+<style type="text/css">
+	#la{
+		color: red;
+	}
+	#ca{
+		color: #9000A1;
+	}
+	#ls{
+		 color:rgb(0, 220, 98);
+	}
+	#ab{
+		font-family: sans-serif;
+	}
+	#cd{
+		font-family: serif;
+	}
+	#ef{
+		font-family: monospace;
+	}
+</style>
+<body>
+<div class="sidebar">
+	<div id="my_logo"></div>
+  <a href="1.html">Introduction to CSS</a>
+  <a href="2.html">CSS Syntax</a>
+  <a href="3.html">CSS Selector</a>
+  <a href="4.html">How to add CSS</a>
+  <a href="5.html">Inline CSS</a>
+  <a href="6.html">Internal CSS</a>
+  <a href="7.html">External CSS</a>
+  <a href="8.html">CSS Background</a>
+  <a href="9.html">CSS Border</a>
+  <a href="10.html">CSS border-spacing</a>
+  <a href="11.html">CSS Display</a>
+  <a class="active" href="13.html">CSS font</a>
+  <a href="14.html">CSS font-size</a>
+  <a href="15.html">CSS font-family</a>
+  <a href="16.html">CSS font-weight</a>
+  <a href="17.html">CSS Colors</a>
+  <a href="18.html">CSS Hover</a>
+  <a href="19.html">CSS Background-color</a>
+  <a href="20.html">CSS Line Height</a>
+  <a href="21.html">CSS Margin</a>
+  <a href="22.html">CSS Images</a>
+  <a href="23.html">CSS Padding</a>
+  <a href="24.html">CSS Text-shadow</a>
+  <a href="25.html">Text-transform</a>
+  <a href="quiz.html">QUIZ</a>
+</div>
+<div class="content">
+	<h1>CSS Font</h1>
+	<p>CSS Font property is used to control the look of texts. By the use of CSS font property you can change the text size, color, style and more. You have already studied how to make text bold or underlined. Here, you will also know how to resize your font using percentage.</p>
+	<ol>
+		<li>CSS Font color: This property is used to change the color of the text. (standalone attribute)</li>
+		<li>CSS Font family: This property is used to change the face of the font.</li>
+		<li>CSS Font size: This property is used to increase or decrease the size of the font.</li>
+
+	</ol>
+	<h2>CSS Font Color</h2>
+	<p>CSS font color is a standalone attribute in CSS although it seems that it is a part of CSS fonts. It is used to change the color of the text.
+
+There are three different formats to define a color:</p>
+<ol>
+	<li>By a color name</li>
+	<li>By hexadecimal value</li>
+	<li>by rgb</li>
+</ol>
+<textarea rows="20" cols="100">
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body {  
+    font-size: 100%;  
+}  
+h1 { color: red; }  
+h2 { color: #9000A1; }   
+p { color:rgb(0, 220, 98); }   
+}  
+</style>  
+</head>  
+<body>  
+<h1>This is heading 1</h1>  
+<h2>This is heading 2</h2>  
+<p>This is a paragraph.</p>  
+</body>  
+</html> 
+ </textarea>
+<p><b>Output</b></p>
+<h1 id="la">This is heading 1</h1>  
+<h2 id="ca">This is heading 2</h2>  
+<p id="ls">This is a paragraph.</p> 
+<h2> CSS Font Family</h2> 
+<p>Its divided into</p>
+<ol>
+	<li>Generic family: It includes Serif, Sans-serif, and Monospace.</li>
+	<li>Font family: It specifies the font family name like Arial, New Times Roman etc.</li>
+
+</ol>
+<p>Serif: Serif fonts include small lines at the end of characters. Example of serif: Times new roman, Georgia etc.
+
+Sans-serif: A sans-serif font doesn't include the small lines at the end of characters. Example of Sans-serif: Arial, Verdana etc.</p>
+<textarea  rows="20" cols="100"><!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body {  
+font-size: 100%;  
+}  
+h1 { font-family: sans-serif; }  
+h2 { font-family: serif; }   
+p { font-family: monospace; }   
+}  
+</style>  
+</head>  
+<body>  
+<h1>This heading is shown in sans-serif.</h1>  
+<h2>This heading is shown in serif.</h2>  
+<p>This paragraph is written in monospace.</p>  
+</body>  
+</html>
+  </textarea>
+<p><b>Output</b></p>
+<h1 id="ab">This heading is shown in sans-serif.</h1>  
+<h2 id="cd">This heading is shown in serif.</h2>  
+<p id="ef">This paragraph is written in monospace.</p>  
+<h2>CSS Font Size</h2>
+<p>CSS font size property is used to change the size of the font.
+
+These are the possible values that can be used to set the font size:</p>
+<textarea rows="19" cols="100">
+<html>  
+<head>  
+<title>Practice CSS font-size property</title>  
+</head>  
+<body>  
+<p style="font-size:xx-small;">  This font size is extremely small.</p>    
+<p style="font-size:x-small;">  This font size is extra small</p>    
+<p style="font-size:small;">  This font size is small</p>    
+<p style="font-size:medium;">  This font size is medium. </p>    
+<p style="font-size:large;">  This font size is large. </p>    
+<p style="font-size:x-large;">  This font size is extra large. </p>    
+<p style="font-size:xx-large;">  This font size is extremely large. </p>    
+<p style="font-size:smaller;">  This font size is smaller. </p>    
+<p style="font-size:larger;">  This font size is larger. </p>    
+<p style="font-size:200%;">  This font size is set on 200%. </p>    
+<p style="font-size:20px;">  This font size is 20 pixels.  </p>    
+</body>  
+</html> 
+ </textarea>
+ <p><b>Output</b></p>
+ <p style="font-size:xx-small;">  This font size is extremely small.</p>    
+<p style="font-size:x-small;">  This font size is extra small</p>    
+<p style="font-size:small;">  This font size is small</p>    
+<p style="font-size:medium;">  This font size is medium. </p>    
+<p style="font-size:large;">  This font size is large. </p>    
+<p style="font-size:x-large;">  This font size is extra large. </p>    
+<p style="font-size:xx-large;">  This font size is extremely large. </p>    
+<p style="font-size:smaller;">  This font size is smaller. </p>    
+<p style="font-size:larger;">  This font size is larger. </p>    
+<p style="font-size:200%;">  This font size is set on 200%. </p>    
+<p style="font-size:20px;">  This font size is 20 pixels.  </p>    
+</div>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="sidebar.css">
+	<title></title>
+	<style type="text/css">  
+table{  
+border: 2px solid blue;  
+text-align: center;  
+font-size: 20px;  
+background-color: lightgreen;  
+}  
+th{  
+border: 5px solid red;  
+background-color: yellow;  
+}  
+td{  
+border: 5px solid violet;  
+background-color: cyan;  
+}  
+#space{  
+border-collapse: separate;  
+border-spacing: 45px;  
+}  
+</style>  
+</head>
+<body>
+<div class="sidebar">
+  <div id="my_logo"></div>
+  <a href="1.html">Introduction to CSS</a>
+  <a href="2.html">CSS Syntax</a>
+  <a href="3.html">CSS Selector</a>
+  <a href="4.html">How to add CSS</a>
+  <a href="5.html">Inline CSS</a>
+  <a href="6.html">Internal CSS</a>
+  <a href="7.html">External CSS</a>
+  <a href="8.html">CSS Background</a>
+  <a href="9.html">CSS Border</a>
+  <a class="active" href="10.html">CSS border-spacing</a>
+  <a href="11.html">CSS Display</a>
+  <a href="13.html">CSS font</a>
+  <a href="14.html">CSS font-size</a>
+  <a href="15.html">CSS font-family</a>
+  <a href="16.html">CSS font-weight</a>
+  <a href="17.html">CSS Colors</a>
+  <a href="18.html">CSS Hover</a>
+  <a href="19.html">CSS Background-color</a>
+  <a href="20.html">CSS Line Height</a>
+  <a href="21.html">CSS Margin</a>
+  <a href="22.html">CSS Images</a>
+  <a href="23.html">CSS Padding</a>
+  <a href="24.html">CSS Text-shadow</a>
+  <a href="25.html">Text-transform</a>
+  <a href="quiz.html">QUIZ</a>
+</div>
+<div class="content">
+	<h2>CSS border-spacing</h2>
+	<p>This CSS property is used to set the distance between the borders of the adjacent cells in the table. It applies only when the border-collapse property is set to separate. There will not be any space between the borders if the border-collapse is set to collapse.
+
+It can be defined as one or two values for determining the vertical and horizontal spacing.</p>
+<ol>
+	<li>When only one value is specified, then it sets both horizontal and vertical spacing.</li>
+	<li>When we use the two-value syntax, then the first one is used to set the horizontal spacing (i.e., the space between the adjacent columns), and the second value sets the vertical spacing (i.e., the space between the adjacent rows).</li>
+
+</ol>
+<h3>SYNTAX</h3>
+<textarea rows="2" cols="100">border-spacing: length | initial | inherit;  </textarea>
+<h3>Property Values</h3>
+<p><b>length:</b> This value sets the distance between the borders of the adjacent table cells in px, cm, pt, etc. Negative values are not allowed.</p>
+
+<p><b>initial:</b> It sets the property to its default value.</p>
+
+<p><b>inherit:</b> It inherits the property from its parent element.</p>
+
+<p>Let's understand this CSS property by using some examples. In the first example, we are using the single value of the border-spacing property, and in the second example, we are using two values of the border-spacing property.</p>
+<p>Example:</p>
+<p>Here, we are using the single value of the border-spacing property. The border-collapse property is set to separate, and the value of the border-spacing is set to 45px.</p>
+<textarea  rows="60" cols="100">
+<!DOCTYPE html>  
+<html>  
+  
+<head>  
+<title> border-spacing property </title>  
+<style>  
+table{  
+border: 2px solid blue;  
+text-align: center;  
+font-size: 20px;  
+background-color: lightgreen;  
+}  
+th{  
+border: 5px solid red;  
+background-color: yellow;  
+}  
+td{  
+border: 5px solid violet;  
+background-color: cyan;  
+}  
+#space{  
+border-collapse: separate;  
+border-spacing: 45px;  
+}  
+</style>  
+</head>  
+  
+<body>  
+  
+<h1> The border-spacing Property </h1>  
+<h2> border-spacing: 45px; </h2>  
+<table id = "space">  
+<tr>  
+<th> First_Name </th>  
+<th> Last_Name </th>  
+<th> Subject </th>  
+<th> Marks </th>  
+</tr>  
+<tr>  
+<td> James </td>  
+<td> Gosling </td>  
+<td> Maths </td>  
+<td> 92 </td>  
+</tr>  
+<tr>  
+<td> Alan </td>  
+<td> Rickman </td>  
+<td> Maths </td>  
+<td> 89 </td>  
+</tr>  
+<tr>  
+<td> Sam </td>  
+<td> Mendes </td>  
+<td> Maths </td>  
+<td> 82 </td>  
+</tr>  
+</table>  
+</body>  
+  
+</html>  </textarea>
+<p>output</p>
+<h1> The border-spacing Property </h1>  
+<h2> border-spacing: 45px; </h2>  
+<table id = "space">  
+<tr>  
+<th> First_Name </th>  
+<th> Last_Name </th>  
+<th> Subject </th>  
+<th> Marks </th>  
+</tr>  
+<tr>  
+<td> James </td>  
+<td> Gosling </td>  
+<td> Maths </td>  
+<td> 92 </td>  
+</tr>  
+<tr>  
+<td> Alan </td>  
+<td> Rickman </td>  
+<td> Maths </td>  
+<td> 89 </td>  
+</tr>  
+<tr>  
+<td> Sam </td>  
+<td> Mendes </td>  
+<td> Maths </td>  
+<td> 82 </td>  
+</tr>  
+</table>
+<p>Here, we are using two values of the border-spacing property. The border-collapse property is set to separate, and the value of the border-spacing is set to 20pt 1em. The first value, i.e., 20pt sets the horizontal spacing, and the value 1em set the vertical spacing.</p> 
+<textarea rows="61" cols="100">
+	<!DOCTYPE html>  
+<html>  
+  
+<head>  
+<title> border-spacing property </title>  
+<style>  
+table{  
+border: 2px solid blue;  
+text-align: center;  
+font-size: 20px;  
+background-color: lightgreen;  
+}  
+th{  
+border: 5px solid red;  
+background-color: yellow;  
+}  
+td{  
+border: 5px solid violet;  
+background-color: cyan;  
+}  
+#space{  
+border-collapse: separate;  
+border-spacing: 20pt 1em;  
+}  
+</style>  
+</head>  
+  
+<body>  
+  
+<h1> The border-spacing Property </h1>  
+<h2> border-spacing: 20pt 1em; </h2>  
+<table id = "space">  
+<tr>  
+<th> First_Name </th>  
+<th> Last_Name </th>  
+<th> Subject </th>  
+<th> Marks </th>  
+</tr>  
+<tr>  
+<td> James </td>  
+<td> Gosling </td>  
+<td> Maths </td>  
+<td> 92 </td>  
+</tr>  
+<tr>  
+<td> Alan </td>  
+<td> Rickman </td>  
+<td> Maths </td>  
+<td> 89 </td>  
+</tr>  
+<tr>  
+<td> Sam </td>  
+<td> Mendes </td>  
+<td> Maths </td>  
+<td> 82 </td>  
+</tr>  
+</table>  
+</body>  
+  
+</html>  
+</textarea> 
+<p>output</p>
+<a href="101.html">click here</a>
+</div>
+
+<br>
+
+</body>
+</html>

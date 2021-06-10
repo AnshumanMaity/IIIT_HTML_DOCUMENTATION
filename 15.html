@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
+    <style>
+        h1.a {
+  font-family: "Times New Roman", Times, serif;
+  color:Red;
+  text-align:center;
+}
+
+h2.b {
+  font-family: Arial, Helvetica, sans-serif;
+  color:blue;
+  text-align:center;
+}
+h1.c{
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div id="my_logo"></div>
+        <a href="1.html">Introduction to CSS</a>
+        <a href="2.html">CSS Syntax</a>
+        <a href="3.html">CSS Selector</a>
+        <a href="4.html">How to add CSS</a>
+        <a href="5.html">Inline CSS</a>
+        <a href="6.html">Internal CSS</a>
+        <a href="7.html">External CSS</a>
+        <a href="8.html">CSS Background</a>
+        <a href="9.html">CSS Border</a>
+        <a href="10.html">CSS border-spacing</a>
+        <a href="11.html">CSS Display</a>
+        <a href="12.html">CSS Float</a>
+        <a href="13.html">CSS font</a>
+        <a href="14.html">CSS font-size</a>
+        <a class="active" href="15.html">CSS font-family</a>
+        <a href="16.html">CSS font-weight</a>
+        <a href="17.html">CSS Colors</a>
+        <a href="18.html">CSS Hover</a>
+        <a href="19.html">CSS Background-color</a>
+        <a href="20.html">CSS Line Height</a>
+        <a href="21.html">CSS Margin</a>
+        <a href="22.html">CSS Images</a>
+        <a href="23.html">CSS Padding</a>
+        <a href="24.html">CSS Text-shadow</a>
+        <a href="25.html">Text-transform</a>
+        <a href="quiz.html">QUIZ</a>
+    </div>
+    <div class="content">
+        <h1 class="h1">CSS font-family</h1>
+        <p>This CSS property is used to provide a comma-separated list of font families. It sets the font-face for the text content of an element. This property can hold multiple font names as a fallback system, i.e., if one font is unsupported in the browser, then others can be used. The different font-family is used for making attractive web pages.</p>
+        <p>There are two types of font-family names in CSS, which are defined below:</p>
+        <ul class="points">
+            <li><strong>family-name:</strong> It is the name of the font-family such as "Courier", "Arial", "Times", etc.</li>
+            <li><strong>generic-family:</strong> It is the name of the generic family that includes five categories, which are "serif", "sans-serif", "cursive", "fantasy", and "monospace". It should be placed at last in the list of the font family names.</li>
+        </ul>
+        <p>Let's define the generic-family categories.</p>
+        <p><strong>serif:</strong> It is mainly used when we are writing the text for printing, such as books, magazines, newspapers, etc. It includes the font-family such as Georgia, Garamond, Times New Roman, Minion, and many more.</p>
+        <p><strong>sans-serif:</strong> It is a modern, formal, and simple style. It is widely used but most often in the digital form of text. It includes the font-family that are Arial, Calibri, Verdana, Futura, Lato, and many more.</p>
+        <p><strong>cursive:</strong> It is mainly used for writing the invitation letter, informal messages, etc. It is like a handwritten text which is written by a pen or a brush. The font-family that it includes is Insolente, Corsiva, Flanella, Belluccia, Zapfino, and many more.</p>
+        <p><strong>monospace:</strong> It is for instructions, mailing address, typewritten text, etc. It includes the font-family that is Monaco, SimSun, Courier, Consolas, Inconsolata, and many more.</p>
+        <p><strong>fantasy:</strong> It makes the text expressive, decorative, and impactful. It includes the font-family that is Impact, Copperplate, Cracked, Critter, and many more.</p>
+        <p><strong>Syntax</strong></p>
+        <textarea rows="2" cols="100">
+font-family: family-name|generic-family|initial|inherit;  
+        </textarea>
+        <p><strong>Values</strong></p>
+        <p>Let's see the values of the font-family property.</p>
+        <p><strong>family-name/generic-family:</strong> It is the list of font-family names and the generic family names.</p>
+        <p><strong>initial:</strong> It is used to set the property to its default value.</p>
+        <p><strong>inherit:</strong> It is used to inherit the property from its parent element.</p>
+        <p>Let's understand it by using an illustration.</p>
+        <p><strong>Example</strong></p>
+        <textarea rows="27" cols="100">
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body{  
+text-align:center;  
+    }  
+h1.a {  
+font-family: "Times New Roman", Times, serif;  
+color:Red;  
+     }
+h2.b {  
+font-family: Arial, Helvetica, sans-serif;  
+color:blue;  
+     }  
+</style>  
+</head>  
+<body>  
+<h1>The font-family Property</h1>  
+                  
+<h1 class="a">Hello World :) :)</h1>  
+                  
+<h2 class="b">Welcome to the CSS Tutorial</h2>  
+                  
+</body>  
+</html>    
+        </textarea>
+
+
+<p><b>Output:</b></p>
+<h1 class="c">The font-family Property</h1>
+
+<h1 class="a">Hello World :) :)</h1>
+
+<h2 class="b">Welcome to the CSS Tutorial</h2>
+        <br>
+    </div>
+</body>

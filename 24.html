@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="sidebar.css">
+<style>  
+table, th, td {  
+    border: 1px solid black;  
+    border-collapse: collapse;  
+}  
+th, td {  
+    padding: 10px;  
+}
+p.padding {  
+    padding-top: 50px;  
+    padding-right: 100px;  
+    padding-bottom: 150px;  
+    padding-left: 200px;  
+}
+</style>  
+</head>
+<body>
+
+<div class="sidebar">
+  <div id="my_logo"></div>
+  <a href="1.html">Introduction to CSS</a>
+  <a href="2.html">CSS Syntax</a>
+  <a href="3.html">CSS Selector</a>
+  <a href="4.html">How to add CSS</a>
+  <a href="5.html">Inline CSS</a>
+  <a href="6.html">Internal CSS</a>
+  <a href="7.html">External CSS</a>
+  <a href="8.html">CSS Background</a>
+  <a href="9.html">CSS Border</a>
+  <a href="10.html">CSS border-spacing</a>
+  <a href="11.html">CSS Display</a>
+  <a href="13.html">CSS font</a>
+  <a href="14.html">CSS font-size</a>
+  <a href="15.html">CSS font-family</a>
+  <a href="16.html">CSS font-weight</a>
+  <a href="17.html">CSS Colors</a>
+  <a href="18.html">CSS Hover</a>
+  <a href="19.html">CSS Background-color</a>
+  <a href="20.html">CSS Line Height</a>
+  <a href="21.html">CSS Margin</a>
+  <a href="22.html">CSS Images</a>
+  <a href="23.html">CSS Padding</a>
+  <a class="active" href="24.html">CSS Text-shadow</a>
+  <a href="25.html">Text-transform</a>
+  <a href="quiz.html">QUIZ</a>
+</div>
+<div class="content">
+  <h1 class="h1">CSS Text-shadow</h1>
+<p>As its name implies, this CSS property adds shadows to the text. It accepts the comma-separated list of shadows that applied to the text. It's default property is none. It applies one or more than one text-shadow effect on the element's text content.</p>
+<p>Let's see the syntax of text-shadow property.</p>
+<p><strong>Syntax</strong></p>
+<p><strong>text-shadow: h-shadow v-shadow blur-radius color| none | initial | inherit;</strong></p>
+
+<p><strong>Values</strong></p>
+<p><strong>h-shadow:</strong> It is the required value. It specifies the position of the horizontal shadow and allows negative values.</p>
+<p><strong>v-shadow:</strong> It is also the required value that specifies the position of the vertical shadow. It does not allow negative values.</p>
+<p><strong>blur-radius:</strong> It is the blur-radius, which is an optional value. Its default value is 0.</p>
+<p><strong>color:</strong> It is the color of the shadow and also an optional value.</p>
+<p><strong>none:</strong> It is the default value, which means no shadow.</p>
+<p><strong>initial:</strong> It is used to set the property to its default value.</p>
+<p><strong>inherit:</strong> It simply inherits the property from its parent element.</p>
+<p>Let's understand it by using some illustrations.</p>
+<h3 class="h4">Example- Simple shadow</h3>
+<textarea rows="20" cols="100">
+  <!DOCTYPE html>   
+    
+<html>   
+<head>   
+    <title> font-weight property </title>   
+    <style>   
+      p.simple{  
+        text-shadow: 3px 3px red;  
+      }  
+    </style>   
+</head>   
+    
+<body>   
+    <p class="simple">   
+      Simple Shadow  
+    </p>   
+   
+</body>   
+</html> 
+</textarea>
+<p><strong>Output:</strong></p>
+<p style="text-shadow: 3px 3px red;">Simple Shadow</p>
+
+<h3 class="h4">Example- Fuzzy shadow</h3>
+
+<textarea rows="22" cols="100">
+  <!DOCTYPE html>   
+    
+<html>   
+<head>   
+    <title> font-weight property </title>   
+    <style>   
+      p.fuzzy{  
+        text-shadow: 3px 3px 3px violet;  
+        font-size:30px;  
+        text-align:center;  
+      }  
+    </style>   
+</head>   
+    
+<body>   
+    <p class="fuzzy">   
+    Fuzzy Shadow  
+    </p>   
+   
+</body>   
+</html>
+</textarea> 
+<p><strong>Output:</strong></p>
+<p style="text-shadow: 3px 3px 3px violet;font-size:30px;text-align:center">Fuzzy Shadows</p>
+<h3 class="h4">Example- Multiple Shadows</h3>
+<textarea rows="22" cols="100">
+  <!DOCTYPE html>   
+    
+<html>   
+<head>   
+    <title> font-weight property </title>   
+    <style>   
+      p.multi{  
+        text-shadow: -3px -3px 3px blue, 3px 3px 3px red;  
+        font-size:30px;  
+        text-align:center;  
+      }  
+    </style>   
+</head>   
+    
+<body>   
+    <p class="multi">   
+    Multiple Shadows  
+    </p>   
+   
+</body>   
+</html>  
+</textarea>
+<p><strong>Output:</strong></p>
+<p style="text-shadow: -3px -3px 3px blue, 3px 3px 3px red;font-size:30px;text-align:center;">Multiple Shadows</p>
+<h3 class="h4">Example- Glow Effect</h3>
+<textarea rows="23" cols="100">
+  <!DOCTYPE html>   
+    
+<html>   
+<head>   
+    <title> font-weight property </title>   
+    <style>   
+      .multi{  
+        text-shadow: 0 0 .1em cyan;  
+        background-color: black;  
+        font-size:50px;  
+        text-align:center;  
+      }  
+    </style>   
+</head>   
+    
+<body>   
+    <div class="multi">   
+    Glow Effect  
+    </div>   
+   
+</body>   
+</html>
+</textarea>
+<p><strong>Output:</strong></p>
+<p style="text-shadow: 0 0 .1em cyan;background-color: black;font-size:50px;text-align:center;">Glow Effect</p>
+
+</div>
+</body>
+</html>
+
+
+
+
+
